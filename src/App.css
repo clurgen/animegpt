@@ -1,0 +1,628 @@
+/** Project coded by Donkey Geek. https://www.youtube.com/c/DonkeyGeek **
+ ╔═══╗ ╔═══╗ ╔═╗ ╔╗ ╔╗╔═╗ ╔═══╗ ╔╗  ╔╗ ──── ╔═══╗ ╔═══╗ ╔═══╗ ╔╗╔═╗
+ ╚╗╔╗║ ║╔═╗║ ║ ╚╗║║ ║║║╔╝ ║╔══╝ ║╚╗╔╝║ ──── ║╔═╗║ ║╔══╝ ║╔══╝ ║║║╔╝
+  ║║║║ ║║ ║║ ║╔╗╚╝║ ║╚╝╝  ║╚══╗ ╚╗╚╝╔╝ ──── ║║ ╚╝ ║╚══╗ ║╚══╗ ║╚╝╝
+  ║║║║ ║║ ║║ ║║╚╗ ║ ║╔╗║  ║╔══╝  ╚╗╔╝ ───── ║║╔═╗ ║╔══╝ ║╔══╝ ║╔╗║
+ ╔╝╚╝║ ║╚═╝║ ║║ ║ ║ ║║║╚╗ ║╚══╗   ║║ ────── ║╚╩═║ ║╚══╗ ║╚══╗ ║║║╚╗
+ ╚═══╝ ╚═══╝ ╚╝ ╚═╝ ╚╝╚═╝ ╚═══╝   ╚╝ ────── ╚═══╝ ╚═══╝ ╚═══╝ ╚╝╚═╝
+************************************************************************/
+
+/* :ROOT * H1 H2 H3 */
+/* BODY */
+/* HR */
+/* HEADER */
+/* MAIN */
+/* WELCOME PAGE */
+/* TOASTIFY COLOR */
+/* FOOTER */
+/* ERROR PAGE */
+/* SIGNUP - LOGIN - FORGETPASSWORD */
+/* LOADER */
+/* LOGOUT SWITCH */
+/* LEVELS */
+/* PROGRESS BAR */
+/* ANSWER OPTIONS*/
+/* QUIZOVER */
+/* SUBMIT BUTTON */
+/* MODAL */
+/* MEDIA QUERIES */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Anton|Bangers|Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --light-grey-color: #eae8e8;
+  --light-green-color: #1ecc78;
+  --green-color: #0cb765;
+  --red-color: #eb1d27;
+  --blue-color: #4f78a4;
+  --dark-red-color: #d31017;
+  --dark-grey-color: #363636;
+  --black-color: #333030;
+  --deep-black-color: #000000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  font-size: 70px;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 6px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Bangers", cursive;
+}
+
+h1 a:hover {
+  color: inherit;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/bg-noise-texture.png);
+  background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 10px 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-container {
+  padding: 20px 0;
+  flex-basis: 80%;
+  flex: auto;
+}
+/* END HEADER */
+
+/* MAIN */
+main {
+  flex-grow: 1;
+}
+/* END MAIN */
+
+/* TOASTIFY COLOR */
+.toastify-color-welcome {
+  color: var(--black-color);
+}
+.toastify-color {
+  color: var(--white-color);
+}
+/* END TOASTIFY COLOR */
+
+/* ERROR PAGE */
+
+.container {
+  background-color: var(--white-color);
+  padding: 30px;
+  flex: 0 1 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+/* END ERROR PAGE */
+
+/* SIGNUP - LOGIN - FORGETPASSWORD */
+.signUpLoginBox {
+  background-image: url(images/bg-noise-texture.png);
+  background-repeat: repeat;
+  -webkit-box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
+  display: flex;
+  justify-content: center;
+}
+
+.slContainer {
+  flex: 0 1 80%;
+  display: flex;
+}
+
+.formBoxLeftSignup {
+  min-height: 500px;
+  background-image: url(images/ironman.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxLeftLogin {
+  min-height: 500px;
+  background-image: url(images/spiderman.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxLeftForget {
+  min-height: 500px;
+  background-image: url(images/deadpool.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxRight {
+  flex: 0 1 50%;
+}
+
+.formBoxRight span {
+  display: block;
+  color: var(--red-color);
+  text-align: center;
+  border: 1px solid var(--red-color);
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.formContent {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formContent h2 {
+  margin: 0 0 40px 0;
+  padding: 0;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.formContent .inputBox {
+  position: relative;
+  height: 80px;
+}
+
+.formContent .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--red-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--white-color);
+  outline: none;
+}
+
+.formContent .inputBox label {
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 17px;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.formContent .inputBox input:focus ~ label,
+.formContent .inputBox input:valid ~ label {
+  top: -30px;
+  left: 0;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Form buttons */
+.formContent button {
+  margin-left: 0;
+  display: block;
+  margin: 0 auto 20px;
+  min-width: 150px;
+  background-color: transparent;
+  color: var(--white-color);
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.formContent button:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled],
+button:disabled:hover,
+button[disabled]:hover {
+  border: 1px solid var(--light-grey-color);
+  background-color: var(--light-grey-color);
+  color: var(--dark-grey-color);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.linkContainer {
+  height: 50px;
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px dashed var(--light-grey-color);
+}
+
+.simpleLink {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.simpleLink:hover {
+  color: var(--red-color);
+}
+/* END SIGNUP - LOGIN - FORGETPASSWORD */
+
+/* LOADER */
+.loader {
+  border: 10px solid var(--light-grey-color);
+  border-radius: 50%;
+  border-top: 10px solid var(--dark-red-color);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  margin: 40px auto 20px;
+}
+
+.loaderText {
+  text-align: center;
+  color: var(--white-color);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* END LOADER */
+
+/* SUBMIT BUTTON */
+.btnSubmit {
+  font-size: 16px;
+  padding: 6px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border-color: var(--red-color);
+  border-radius: 5px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+/* END SUBMIT BUTTON */
+
+/* MODAL */
+.modalBackground {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  flex: 0 1 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  background-color: var(--dark-red-color);
+  padding: 15px;
+  color: var(--white-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: var(--white-color);
+}
+
+.modalBody {
+  padding: 30px 10px;
+  background: var(--white-color);
+  height: 400px;
+  overflow: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.comicImage {
+  flex: 0 1 40%;
+  align-self: stretch;
+}
+
+.comicDetails {
+  flex: 0 1 50%;
+  align-self: stretch;
+}
+
+.comicImage img {
+  width: 100%;
+  height: auto;
+}
+
+.comicImage p {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--dark-grey-color);
+}
+
+.comicDetails h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-grey-color);
+  text-transform: uppercase;
+}
+
+.comicDetails p {
+  font-style: italic;
+  margin-bottom: 40px;
+  color: var(--dark-grey-color);
+}
+
+.comicDetails a {
+  flex: 0 1 60%;
+  display: inline-block;
+  background-color: var(--dark-red-color);
+  padding: 10px 15px;
+  margin-right: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  transform: skew(-15deg);
+}
+
+.comicDetails a:hover {
+  background-color: var(--dark-grey-color);
+}
+
+.modalBtn {
+  background: var(--light-grey-color);
+  padding: 9px 5px;
+  width: 90px;
+  color: var(--deep-black-color);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--light-grey-color);
+  margin: 0;
+  font-size: 15px;
+}
+
+.modalBtn:hover {
+  background: var(--red-color);
+  color: var(--white-color);
+  border: 1px solid var(--light-grey-color);
+}
+/* END MODAL */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 540px) {
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stepsBtnContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    align-items: stretch;
+  }
+
+  .success,
+  .failure,
+  .gameOver {
+    flex-basis: auto;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .welcomePage {
+    background-image: none;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .leftBox {
+    display: flex;
+    flex: 0 1 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightBox {
+    display: flex;
+    flex: 0 1 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-welcome {
+    margin-top: 0;
+    flex-basis: 300px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  /* Change Modal elements */
+  .modalBody {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+  }
+
+  .modalContainer {
+    flex: 0 1 90%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  /* make container full width */
+  .container {
+    flex: 0 1 100%;
+  }
+
+  /* hide all images on forms */
+  .formBoxLeftSignup,
+  .formBoxLeftLogin,
+  .formBoxLeftForget {
+    display: none;
+  }
+
+  .formBoxRight {
+    flex: 0 1 100%;
+  }
+}
+
+.navbar {
+  background-color: #353535 !important;
+}
+.navbar a {
+  color: blue;
+}
+.navbar a:hover {
+  color: #f39c12;
+}
+
+.textarea {
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  border: 1px solid #333333;
+  white-space: normal;
+}
+
+.leTitre {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-section form {
+  display: flex;
+  align-items: center;
+}
+
+.comment-section form input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.comment-section form button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-section form button:hover {
+  background-color: #449d44;
+}
+
+.comment-section .list-group {
+  margin-top: 20px;
+}
+
+.comment-section .list-group .list-group-item {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+.footer h4 {
+  margin-bottom: 1rem;
+}
+.footer form {
+  margin-bottom: 0;
+}
+.footer .form-control {
+  border-radius: 0;
+  border-color: #ccc;
+}
+.footer .btn {
+  border-radius: 0;
+  margin-top: 1rem;
+}
