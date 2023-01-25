@@ -80,16 +80,14 @@ function ChatGPT() {
     Partie 1 au moins 200 mots présente ${animeTitre} sortie en ${animeDate} composé de ${nbEpisode} épisodes avec uniquement bref aperçu de l'histoire et du contexte. 
     Partie 2 présente en au moins 200 mots uniquement les personnages clés de l'anime ${animeTitre}, inclu leur histoire, personnalité et rôle dans l'histoire.
     Partie 3, analyse uniquement l'intrigue de l'anime, integre les thèmes principaux, éléments de l'intrigue et moments clés de l'histoire en au moins 300 mots, sans spoiler.
-    Partie 4 analyse de facon originale uniquement les aspects techniques de l'anime tels que le style d'animation, la direction artistique, la musique, les effets visuels, etc en apportant des exemples et des annectodes en au moins 200 mots
-    Partie 5, en prenant en compte la note ${animeScore}/10, et le classement de la série (${animeRank}) presente uniquement l'avis générale des fans sur l'anime en au moins 200 mots
+    Partie 4, en prenant en compte la note ${animeScore}/10, et le classement de la série (${animeRank}) presente uniquement l'avis générale des fans sur l'anime en au moins 200 mots
     Et dans une conclusion invite à discuter de l'anime dans les commentaires, à partager l'article en au moins 100 mots.
     `)
       : (prompt = `En t'aidant de MyAnimeList, Nautiljon, AniDB, Youtube, écris un article avec un titre global <h2 class="leTitre"> entoure d'une <div class="leTitre">, un titre originale par partie <h3 class="sousTitre"> et des paragraphes <p class="paragraphe"> toute partie devra etre entouré d'une div englobant h3 et p avec un className se référant au numéro de la partie et l'integralité des parties d'une <div class="lesParties">.
     Partie 1 au moins 200 mots présente ${animeTitre} sortie en ${animeDate} composé de ${nbEpisode} épisodes avec uniquement bref aperçu de l'histoire et du contexte. 
     Partie 2 présente en au moins 200 mots uniquement les personnages clés de l'anime ${animeTitre}, inclu leur histoire, personnalité et rôle dans l'histoire.
     Partie 3, analyse uniquement l'intrigue de l'anime, integre les thèmes principaux, éléments de l'intrigue et moments clés de l'histoire en au moins 300 mots, sans spoiler.
-    Partie 4 analyse de facon originale et en étant créatif uniquement les aspects techniques de l'anime tels que le style d'animation, la direction artistique, la musique, les effets visuels, etc en apportant des exemples et des annectodes en au moins 200 mots
-    Partie 5, en prenant en compte la note ${animeScore}/10, et le classement de la série (${animeRank})  Si ${animeScore} inférieure à 7 critique negativement, si ${animeScore} inférieure à 8 soit critique positivement et si ${animeScore} entre 7 et 8 soit mesuré, presente uniquement l'avis générale des fans sur l'anime en au moins 200 mots
+    Partie 4, en prenant en compte la note ${animeScore}/10, et le classement de la série (${animeRank})  Si ${animeScore} inférieure à 7 critique negativement, si ${animeScore} inférieure à 8 soit critique positivement et si ${animeScore} entre 7 et 8 soit mesuré, presente uniquement l'avis générale des fans sur l'anime en au moins 200 mots
     Et dans une conclusion invite à discuter de l'anime dans les commentaires, à partager l'article en au moins 100 mots.
     Soit orginal et créatif !
     `);
