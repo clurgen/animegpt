@@ -1,0 +1,67 @@
+    "Introduction : Présentation de l'anime avec un bref aperçu de l'histoire et du contexte.""
+
+    "Présentation des personnages principaux : Présentation des personnages clés de l'anime, y compris leur histoire, leur personnalité et leur rôle dans l'histoire."
+
+    "Analyse de l'histoire : Analyse de l'intrigue de l'anime, y compris les thèmes principaux, les éléments de l'intrigue et les moments clés de l'histoire."
+
+    "Analyse de la réalisation : Analyse des aspects techniques de l'anime, tels que le style de dessin, la direction artistique, la musique, les effets visuels, etc."
+
+    "Conclusion : Résumé des points clés de l'article et évaluation globale de l'anime."
+
+    Où regarder l'anime : Information sur les plateformes ou le anime est disponible pour être visionné.
+
+    Références : Sources utilisées pour rédiger l'article.
+
+    "Conclusion : Invitation à discuter de l'anime dans les commentaires, à partager l'article et à se renseigner sur d'autres anime similaires."
+
+    -----------------------------------------------------------------------
+
+    "Écris un paragraphe de 150 mots présentant Naruto Shippuden sortie en avec uniquement bref aperçu de l'histoire et du contexte, tu peux t'aider de MyAnimeList",
+
+    "Présente en 150 mots uniquement les personnages clés de l'anime, y compris leur histoire, leur personnalité et leur rôle dans l'histoire.",
+
+    "Analyse uniquement l'intrigue de l'anime, en y integrant les thèmes principaux, les éléments de l'intrigue et les moments clés de l'histoire en environ 200 mots, sans spoiler.",
+
+    "Analyse uniquement les aspects techniques de l'anime, tels que le style de dessin, la direction artistique, la musique, les effets visuels, etc en apportant des exemples et si possible des annectodes en environ 100 mots.",
+
+    "En prenant en compte la note /10, et le classement de popularité de la série presente uniquement l'avis générale des fans en environ 150 mots",
+
+    "Conclu et invite à discuter de l'anime dans les commentaires, et à partager l'article en environ 100 mots",
+
+
+Écris un article avec un titre global <h1 className="leTitre"> entoure d'une <div className="leTitre">, un titre originale à chaque partie <h2 className="sousTitre"> et des paragraphes <p className="paragraphe"> chaque partie devra etre entouré d'une div englobant h2 et p avec un className se référant au numéro de la partie. Dans une 1ere partie d'environ 150 mots présente ${animeTitre} sortie en ${animeDate} composé de ${nbEpisode} épisodes avec uniquement bref aperçu de l'histoire et du contexte, tu peux t'aider de MyAnimeList, Nautiljon, AniDB ou youtube. Dans une seconde partie présente en environ 150 mots uniquement les personnages clés de l'anime ${animeTitre}, y compris leur histoire, leur personnalité et leur rôle dans l'histoire.
+    Dans une 3ème partie, analyse uniquement l'intrigue de l'anime en y integrant les thèmes principaux, les éléments de l'intrigue et les moments clés de l'histoire en environ 200 mots, sans spoiler
+    Dans une 4eme partie uniquement les aspects techniques de l'anime tels que le style de dessin, la direction artistique, la musique, les effets visuels, etc en apportant des exemples et si possible des annectodes en environ 100 mots
+    Dans une 5ème partie, en prenant en compte la note ${animeScore}/10, et le classement de popularité de la série (${animeRank}) presente uniquement l'avis générale des fans sur l'anime en environ 150 mots
+    Et dans une derniere partie écris une conclusion qui invite à discuter de l'anime dans les commentaires, et à partager l'article en environ 100 mots.
+    Pour faire tout cela, tu peux t'aider de MyAnimeList, Nautiljon, AniDB ou Youtube.
+
+
+
+    "
+
+<h1>Karneval : Une série animée à l'histoire riche</h1>
+
+<h2>Présentation de l'anime Karneval</h2>
+<p>Karneval est une série animée sortie en avril 2013, elle compte 13 épisodes. Elle a été produite par le studio Manglobe et réalisée par Kotaro Tamura et Takayuki Hamana. L'histoire se déroule à un monde post-apocalyptique, dans lequel les humains sont en conflit avec des créatures non-humaines appelées "Variants". L'histoire se concentre sur Nai et Gareki, deux jeunes garçons qui se retrouvent mêlés à un groupe d'espions appelé "Karnival" et qui mènent une lutte acharnée pour sauver le monde.</p>
+
+<h2>Les personnages principaux de Karneval</h2>
+<p>Nai est l'un des personnages principaux de l'anime Karneval. Il est un jeune homme âgé de 14 ans, qui a été abandonné en tant qu'enfant et a grandi avec des souvenirs flous de ses parents. Il est très déterminé et ne recule devant aucun danger. Il a une grande force physique et est très perspicace. Il est également très loyal et est prêt à tout pour protéger ses amis.
+
+Gareki est l'autre personnage principal de Karneval. Il est un voleur à la recherche d'un trésor caché. Il est très intelligent et astucieux, mais est également très cynique et sarcastique. Il a tendance à se sous-estimer et à cacher ses vrais sentiments. Il est prêt à tout pour protéger ses amis et est très dévoué à Nai.</p>
+
+<h2>Analyse de l'intrigue de Karneval</h2>
+<p>L'intrigue de Karneval est construite autour des personnages principaux et des différents groupes qui les entourent. Les thèmes principaux de l'anime sont l'amitié, la loyauté et le courage. La série explore également la nature de la vie et de la mort, ainsi que la place des humains dans un monde post-apocalyptique. Les moments clés de l'histoire sont lorsque Nai et Gareki découvrent leur véritable identité, lorsqu'ils sont poursuivis par les Variants et lorsqu'ils doivent affronter leurs ennemis.
+
+L'intrigue de Karneval est riche et complexe. Les personnages sont bien développés et leurs histoires sont intéressantes et mouvementées. Les scènes d'action sont bien exécutées et les moments dramatiques sont bien mis en valeur. Les personnages principaux sont attachants et leurs interactions sont intéressantes à suivre.</p>
+
+<h2>Les aspects techniques de Karneval</h2>
+<p>Le style graphique de Karneval est très coloré et bien réalisé. Les scènes sont bien animées et les personnages sont bien dessinés et expressifs. La direction artistique est également très bien réalisée et les décors sont très variés et bien réalisés.
+
+La musique de Karneval est très variée et les thèmes sont bien choisis. La bande originale est très riche et les chansons sont bien adaptées à l'histoire. Les effets visuels sont bien exécutés et ajoutent beaucoup d'intensité aux scènes d'action.</p>
+
+<h2>Les avis des fans sur Karneval</h2>
+<p>Les fans de Karneval sont nombreux et la série a beaucoup de succès. La série a une note de 7.09/10 sur MyAnimeList et est classée 3636ème dans le classement de popularité. Les avis des fans sont très positifs et ils sont unanimes pour dire que l'anime est très intéressant et bien exécuté. Les fans apprécient l'intrigue riche et complexe et les personnages attachants. Ils sont également séduits par le style graphique et les musiques.</p>
+
+<h2>Conclusion</h2>
+<p>Karneval est une série animée riche et intéressante. Les personnages sont attachants et l'intrigue est riche et complexe. Les aspects techniques sont bien réalisés et les musiques sont variées et bien adaptées à l'histoire. Les fans de l'anime sont nombreux et apprécient la série pour son intrigue et ses personnages. Si vous avez aimé cet article, n'hésitez pas à le partager et à en discuter dans les commentaires !</p>"

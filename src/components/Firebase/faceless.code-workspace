@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../../faceless"
+	},
+	{
+		"path": "../../../../.."
+	},
+	{
+		"path": "../../../../../../gepeto"
+	},
+	{
+		"path": "../../../../../../gepeto2"
+	},
+	{
+		"path": "../../../../../../space-invaders"
+	},
+	{
+		"path": "../../../../../../../../Desktop/fitblack"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "space-invaders"
+  }
+}

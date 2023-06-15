@@ -1,27 +1,30 @@
-import React from "react";
-import batman from "../../images/batman.png";
+import React, { useState, useRef } from "react";
 
-const centerH2 = {
-  textAlign: "center",
-  marginTop: "50px",
-};
+const ErrorPage = () => {
+  const [animation, setAnimation] = useState("glitch 1s infinite");
+  const h1Ref = useRef(null);
 
-const centerImg = {
-  display: "block",
-  margin: "40px auto",
-};
+  const handleMouseEnter = () => {
+    setAnimation("none");
+  };
 
-function ErrorPage() {
+  const handleMouseLeave = () => {
+    setAnimation("glitch 1s infinite");
+  };
+
   return (
-    <div className="quiz-bg">
-      <div className="container">
-        <h2 style={centerH2}>
-          Malheureusement cette page n'existe pas et FatBlack c'est un bg
-        </h2>
-        <img src={batman} style={centerImg} alt="error page" />
-      </div>
+    <div className="container404">
+      <h1
+        ref={h1Ref}
+        style={{ animation }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        404
+      </h1>
+      <p>{"Desolé, cette page n'existe pas, ou pas encore ;)"}.</p>
     </div>
   );
-}
+};
 
 export default ErrorPage;

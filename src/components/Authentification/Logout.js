@@ -1,30 +1,21 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FirebaseContext } from "../Firebase";
+import Nav from "react-bootstrap/Nav";
 
 const Logout = () => {
-  const [checked, setChecked] = useState(false);
   const firebase = useContext(FirebaseContext);
   let navigate = useNavigate();
 
-  useEffect(() => {
-    if (checked) {
-      firebase.signoutUser();
-      navigate("/");
-      window.location.reload();
-    }
-  }, [checked]);
-
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
+  const handleChange = () => {
+    firebase.signoutUser();
+    navigate("/");
+    window.location.reload();
   };
   return (
-    <div className="logoutContainer">
-      <label className="switch">
-        <input onChange={handleChange} type="checkbox" checked={checked} />
-        <span className="slider round"></span>
-      </label>
-    </div>
+    <Nav.Link onClick={handleChange} href="/">
+      Deconnexion
+    </Nav.Link>
   );
 };
 

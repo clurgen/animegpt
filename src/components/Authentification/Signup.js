@@ -8,7 +8,6 @@ function Signup() {
 
   const data = {
     pseudo: "",
-    age: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -23,31 +22,28 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { email, password, pseudo, age } = loginData;
+    const { email, password, pseudo } = loginData;
     firebase
       .signupUser(email, password)
       .then((authUser) => {
         return firebase.user(authUser.user.uid).set({
           pseudo: pseudo,
           email: email,
-          age: age,
         });
       })
       .then(() => {
         setLoginData({ ...data });
-        navigate("/article");
+        navigate("/");
       })
       .catch((error) => {
         setError(error);
-        setLoginData({ ...data });
       });
   };
 
-  const { pseudo, age, email, password, confirmPassword } = loginData;
+  const { pseudo, email, password, confirmPassword } = loginData;
 
   const btn =
     pseudo === "" ||
-    age < 18 ||
     email === "" ||
     password === "" ||
     password !== confirmPassword ? (
@@ -56,75 +52,118 @@ function Signup() {
       <button>Inscription</button>
     );
 
-  const errorMsg = error !== "" && <span>{error.message}</span>;
+  const errorMsg =
+    error !== "" ? (
+      <span>{error.message}</span>
+    ) : (
+      <p className="text-white-50 mb-5">Entrez les informations demandées</p>
+    );
 
   return (
-    <div className="signupLoginBox">
-      <div className="slcontainer">
-        <div className="formBoxLeftSignup"></div>
-        <div className="formBoxRight">
-          <div className="formContent">
-            {errorMsg}
-            <h2>Inscription</h2>
-            <form onSubmit={handleSubmit}>
-              <div className="inputBox">
-                <input
-                  onChange={handleChange}
-                  value={pseudo}
-                  type="text"
-                  id="pseudo"
-                  required
-                />
-                <label htmlFor="pseudo">Pseudo</label>
+    <div className="container h-100">
+      <div className="row d-flex justify-content-center align-items-center h-100">
+        <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div
+            className="card bg-dark text-white"
+            style={{ borderRadius: "1rem" }}
+          >
+            <div className="card-body p-5 text-center">
+              <div className="mb-md-5 mt-md-4 pb-5">
+                <h2 className="fw-bold mb-2 text-uppercase">Inscription</h2>
+                {errorMsg}
+                <form onSubmit={handleSubmit}>
+                  <div className="form-outline form-white mb-4">
+                    <label className="form-label" for="pseudo">
+                      Pseudo
+                    </label>
+                    <input
+                      type="text"
+                      id="pseudo"
+                      onChange={handleChange}
+                      value={pseudo}
+                      placeholder="Hokage"
+                      required
+                      className="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <div className="form-outline form-white mb-4">
+                    <label className="form-label" for="typeEmailX">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      onChange={handleChange}
+                      value={email}
+                      placeholder="Test@email.fr"
+                      required
+                      className="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <div className="form-outline form-white mb-4">
+                    <label className="form-label" for="typePasswordX">
+                      Mot de passe
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      onChange={handleChange}
+                      value={password}
+                      placeholder="UnMotDePasseSophistiqué"
+                      required
+                      className="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <div className="form-outline form-white mb-4">
+                    <label className="form-label" for="confirmPassword">
+                      Confirmez votre mot de passe
+                    </label>
+                    <input
+                      type="password"
+                      id="confirmPassword"
+                      onChange={handleChange}
+                      value={confirmPassword}
+                      placeholder="UnMotDePasseSophistiqué"
+                      required
+                      className="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <p className="small mb-5 pb-lg-2">
+                    <Link className="text-white-50" to="/forgetpassword">
+                      Mot de passe oublié ?
+                    </Link>
+                  </p>
+
+                  {btn ? (
+                    <button
+                      className="btn btn-outline-light btn-lg px-5"
+                      type="submit"
+                    >
+                      Connnexion
+                    </button>
+                  ) : (
+                    <button
+                      disabled
+                      className="btn btn-outline-light btn-lg px-5"
+                      type="submit"
+                    >
+                      Inscription
+                    </button>
+                  )}
+                </form>
               </div>
-              <div className="inputBox">
-                <input
-                  onChange={handleChange}
-                  value={age}
-                  type="number"
-                  id="age"
-                  required
-                />
-                <label htmlFor="age">Age</label>
+              <div>
+                <p class="mb-0">
+                  Déjà inscrit ?{" "}
+                  <Link className="text-white-50 fw-bold" to="/login">
+                    Connectez-vous
+                  </Link>
+                </p>
               </div>
-              <div className="inputBox">
-                <input
-                  onChange={handleChange}
-                  value={email}
-                  type="email"
-                  id="email"
-                  required
-                />
-                <label htmlFor="email">Email</label>
-              </div>
-              <div className="inputBox">
-                <input
-                  onChange={handleChange}
-                  value={password}
-                  type="password"
-                  id="password"
-                  required
-                />
-                <label htmlFor="password">Mot de passe</label>
-              </div>
-              <div className="inputBox">
-                <input
-                  onChange={handleChange}
-                  value={confirmPassword}
-                  type="password"
-                  id="confirmPassword"
-                  required
-                />
-                <label htmlFor="confirmPassword">
-                  Confirmer le mot de passe
-                </label>
-              </div>
-              {btn}
-            </form>
-            <div className="linkContainer">
-              <Link className="simpleLink" to="/login">
-                Déjà inscrit ? Connectez-vous
-              </Link>
             </div>
           </div>
         </div>
